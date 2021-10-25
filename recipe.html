@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Kitchen</title>
+	<meta charset="utf-8">
+	<!--
+		CSS styles and properties thanks to https://www.w3schools.com/css/
+	-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav id="navbar">
+		<a class="nav-links" href="#ingredients">Ingredients</a>
+		<a class="nav-links" href="#instructions">Instructions</a>
+		<a class="nav-links" href="#finished-cake">Finished</a>
+		<a class="nav-links" href="#other-recipes">Compare</a>
+	</nav>
+	<main>
+		<header id="intro">
+			<h1 class="titles">Code Kitchen</h1>
+			<p>Welcome to my kitchen! Today we'll cook my favorite meal. Anxious to see what it is? Well, here's a <strong>full recipe</strong>! This involves chocolate. A lot of chocolate! 😊</p>
+			<h2 class="titles">Chocolate Chip Cake - My favourite recipe</h2>
+			<p>Let's get down to business! Roll up your sleeves because here we go!</p>
+		</header>
+		<section id="main-section">
+			<article id="recipe">
+				<div id="ingredients">
+					<p>First of all, for preparing this meal, you'll need:</p>
+					<!--Unordered list of ingredients-->
+					<ul class="unordered-list">
+						<li>200 g Chocolate</li>
+						<li>4 eggs</li>
+						<li>400 g Flour</li>
+						<li>2 cups of Milk</li>
+						<li>2 tsp Vegetable Oil</li>
+					</ul>
+				</div>
+				<div id="instructions">
+					<p>To make it look and taste great, just follow these simple steps:</p>
+					<!--Ordered list with steps-->
+					<ol class="ordered-list" type="I">
+						<li>Cut chocolate in small chips 🍫</li>
+						<li>Beat eggs 🥚</li>
+						<!--Detailed instructions on how to beat eggs-->
+						<ul class="unordered-list" id="inner-list">
+							<li>Break eggs</li>
+							<li>Separate eggwhite from yolk</li>
+							<li>Beat the eggwhites</li>
+						</ul>
+						<li>Add sugar to eggwhites 🥣</li>
+						<li>Stir well 🥣</li>
+						<li>Add everything else except chocolate crisps 🥣</li>
+						<li>When the mixture is evenly stirred, pour it in the baking pan</li>
+						<li>Add chocolate crisps 🍫</li>
+						<li>Bake for 20 minutes on 230 degrees Celsius 🔥</li>
+						<li>Cut, decorate and serve 🍰</li>
+					</ol>
+				</div>
+			</article>
+			<aside id="finished-cake">
+				<!--List with images-->
+				<p>Here are some pictures of how this cake should look like</p>
+				<ul class="unordered-list" id="image-list">
+					<li><img class="img" src="img/img1.jpg" alt="Chocolate Chip Cake straight out of the oven"></li>
+					<li><img class="img" src="img/img2.jpg" alt="Chocolate Chip Cake cut out of the pan"></li>
+					<li><img class="img" src="img/img3.jpg" alt="Chocolate Chip Cake cut pieces"></li>
+					<li><img class="img" src="img/img4.jpg" alt="Chocolate Chip Cake served on a plate"></li>
+				</ul>
+				<p>Enjoy your chocolate cake!</p>
+			</aside>
+		</section>
+		<section id="other-recipes">
+			<!--List with other recipes, links and images-->
+			<p>Here are some great chocolate chip cake recipes you can compare with mine. They surely look tasty!</p>
+			<ul class="unordered-list">
+				<li><a class="links" href="https://www.melskitchencafe.com/chocolate-chip-cake/"><img class="img other" src="img/recipe1.jpg" alt="Chocolate Chip Cake by Mel's Kitchen Cafe" title="Chocolate Chip Cake by Mel's Kitchen Cafe">Mel's Kitchen Cafe</a></li>
+				<li><a class="links" href="https://prettysimplesweet.com/chocolate-chip-cake/"><img class="img other" src="img/recipe2.jpg" alt="Chocolate Chip Cake by Pretty. Simple. Sweet." title="Chocolate Chip Cake by Pretty. Simple. Sweet.">Pretty. Simple. Sweet.</a></li>
+				<li><a class="links" href="https://inspiredbycharm.com/chocolate-chip-cake/"><img class="img other" src="img/recipe3.jpg" alt="Chocolate Chip Cake by Inspired by Charm" title="Chocolate Chip Cake by Inspired by Charm">Inspired by Charm</a></li>
+				<li><a class="links" href="https://www.mycakeschool.com/recipes/chocolate-chip-recipe/"><img class="img other" src="img/recipe4.jpg" alt="Chocolate Chip Cake by My Cake School" title="Chocolate Chip Cake by My Cake School">My Cake School</a></li>
+				<li><a class="links" href="https://www.goodto.com/recipes/chocolate-chip-cake"><img class="img other" src="img/recipe5.jpg" alt="Chocolate Chip Cake by GoodtoKnow" title="Chocolate Chip Cake by GoodtoKnow">GoodtoKnow</a></li>
+			</ul>
+		</section>
+		<p class="special-par">I hope you enjoyed baking this <span class="first-span">Chocolate Chip Cake</span>! If you want more <span>delicious recipes</span> like this, be sure to follow <span class="last-span">Code Kitchen</span> on social media!</p>
+	</main>
+	<!--Footer section-->
+	<footer id="footer">
+		<p>Created by: <span id="author">Coder::Owl</span></p>
+		<cite class="cite">CSS properties thanks to <a class="links" href="https://www.w3schools.com/css/" target="_blank">W3 Schools</a></cite>
+	</footer>
+</body>
+</html>

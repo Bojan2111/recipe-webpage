@@ -1,0 +1,241 @@
+/*
+*	CSS styles and properties thanks to https://www.w3schools.com/css/
+*/
+
+body {
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 18px;
+}
+
+.titles {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(#ccc, #333);
+	justify-content: center;
+	border-radius: 20px;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: orange;
+	padding: 10px 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.nav-links:hover {
+	color: black;
+}
+
+#intro {
+	border-radius: 20px;
+	background-color: #bbb;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+#main-section {
+	display: flex;
+	justify-content: center;
+}
+
+#recipe {
+	color: #333;
+	margin-bottom: 10px;
+	padding: 20px;
+	font-size: 18px;
+	width: 60%;
+}
+
+#ingredients {
+	background-color: rgba(200, 0, 80, 0.5);
+	padding: 10px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.unordered-list {
+	background-color: #333;
+	color: lightgreen;
+	border: 2px groove gray;
+	border-radius: 10px;
+	width: 60%;
+	margin: auto;
+	padding: 10px 0 10px 60px;
+	list-style-image: url('img/bullet.png');
+}
+
+#instructions {
+	background-color: rgba(220, 50, 20, 0.5);
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.ordered-list {
+	background-color: #333;
+	color: lightblue;
+	width: 60%;
+	margin: auto;
+	padding: 10px 0 10px 60px;
+	border: 2px groove gray;
+	border-radius: 10px;
+}
+
+#inner-list {
+	padding: 10px 0;
+	border: none;
+}
+
+#finished-cake {
+	color: black;
+	background: linear-gradient(rgba(233, 196, 134, 0.8), rgba(104, 46, 13, 0.8));
+	padding: 0 20px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#image-list {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#image-list .img {
+	width: 20vw;
+	height: 20vw;
+}
+
+.img {
+	background-color: #ccc;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.links {
+	text-decoration: none;
+	color: lightblue;
+}
+
+#other-recipes {
+	background-color: lightgreen;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+#footer {
+	text-align: center;
+	background-color: black;
+	border-radius: 50%;
+	color: lightgreen;
+	padding: 20px 0;
+	width: 50%;
+	margin: 20px auto;
+}
+
+#author {
+	font-style: normal;
+	font-family: monospace;
+}
+
+.cite {
+	color: lightblue;
+}
+
+p span {
+	font-style: italic;
+}
+
+.last-span {
+	text-decoration: underline;
+}
+
+.first-span {
+	font-style: normal;
+	color: red;
+}
+
+@media only screen and (max-width: 400px) {
+	/* For Small Screens */
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-links {
+		font-size: 16px;
+	}
+
+	#main-section {
+		flex-direction: column;
+	}
+
+	#recipe {
+		width: 100%;
+		font-size: 12px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	#image-list .img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.img {
+		padding: 3px;
+	}
+
+	.other {
+		width: 100px;
+		height: auto;
+	}
+}
+
+@media (max-width:750px) and (min-width:401px) {
+	/* For Medium Screens */
+	#main-section {
+		flex-direction: column;
+	}
+
+	#recipe {
+		width: 95%;
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	#image-list .img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.nav-links {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media only screen and (min-width: 751px) {
+	/* For Large Screens */
+	#main-section {
+		flex-direction: row;
+	}
+}
